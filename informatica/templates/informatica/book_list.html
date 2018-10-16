@@ -37,7 +37,12 @@
                         {{ book.author }}
                     </td>
                     <td class="table-body-item">
-                        <a href="{% static 'store/' %}{{ book.isbn }}">Descargar</a>
+                        <a href="{% static 'store/' %}{{ book.isbn }}">
+                            Descargar
+                        </a>
+                        <a href="../book/{{ book.id }}">
+                            Detalles
+                        </a>
                     </td>
                 </tr>
                 {% endfor %}
